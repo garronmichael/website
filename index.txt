@@ -1,0 +1,11 @@
+<DOCTYPE! html>
+	<html>
+		<head>
+			<title>Garron Sanchez</title>
+		</head>
+		<body>
+			<img src="Users/Garron/codes/images/salt_flats.jpg" />
+			<p>Hi, My name is Garron Sanchez.</p>
+			<p>Thanks for visiting my site.</p>
+		</body>
+	</html>
