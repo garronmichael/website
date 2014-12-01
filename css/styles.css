@@ -42,6 +42,7 @@ ul {
 
 .nav {
 	padding: 0;
+	text-align: center;
 }
 
 .nav li {
@@ -50,6 +51,7 @@ ul {
 
 .social-media {
 	padding: 0;
+	text-align: center;
 }
 
 .social-media li {
