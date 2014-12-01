@@ -23,6 +23,7 @@ h3 {
 
 p {
 	margin: 5px 0 5px 0;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 ol {
 	padding: 0 0 0 50px;
@@ -38,15 +39,18 @@ ul {
 
 .left {
 	float: left;
+	margin: 150px 0 0 0;
 }
 
 .nav {
 	padding: 0;
 	text-align: center;
+	font-size: 2em;
 }
 
 .nav li {
 	display: inline;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .social-media {
