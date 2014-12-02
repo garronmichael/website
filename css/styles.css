@@ -6,7 +6,7 @@ h3, p, ol, ul, li, a {
 }
 
 body {
-	padding: 20px 20px 20px 20px;
+	padding: 0 0 0 0;
 }
 
 h1 {
@@ -23,7 +23,6 @@ h3 {
 
 p {
 	margin: 5px 0 5px 0;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 ol {
 	padding: 0 0 0 50px;
@@ -33,24 +32,29 @@ ul {
 	padding: 0 0 0 50px;
 }
 
+.header {
+	padding: 10px 10px 10px 10px;
+}
+
+.content {
+	padding: 20px 20px 20px 20px;
+	margin: 30px 0 0 0;
+}
+
 .right {
 	float: right;
 }
 
 .left {
 	float: left;
-	margin: 150px 0 0 0;
 }
 
 .nav {
 	padding: 0;
-	text-align: center;
-	font-size: 2em;
 }
 
 .nav li {
 	display: inline;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .social-media {
