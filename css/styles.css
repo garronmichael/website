@@ -60,6 +60,10 @@ ul {
 	display: inline;
 }
 
+.nav li a{
+	color: #fff;
+}
+
 .social-media {
 	padding: 0;
 	text-align: center;
