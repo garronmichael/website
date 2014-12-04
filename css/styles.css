@@ -58,6 +58,7 @@ ul {
 
 .nav li {
 	display: inline;
+	padding-left: 10px;
 }
 
 .nav li a{
