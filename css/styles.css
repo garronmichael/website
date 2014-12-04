@@ -7,6 +7,7 @@ h3, p, ol, ul, li, a {
 
 body {
 	padding: 0 0 0 0;
+	background-color: #ddeeff;
 }
 
 h1 {
@@ -52,6 +53,7 @@ ul {
 .nav {
 	padding: 0;
 	text-align: center;
+	background-color: #0055cc;
 }
 
 .nav li {
