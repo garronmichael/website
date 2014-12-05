@@ -19,6 +19,8 @@ h1 {
 	font-size: 30px;
 	font-weight: 600;
 	text-align: center;
+	color: #222;
+	text-decoration: underline;
 }
 
 h2 {
@@ -30,7 +32,22 @@ h3 {
 }
 
 p {
+	color: #555;
+	font-weight: 200;
+	font-size: 16px;
 	margin: 5px 0 5px 0;
+}
+
+a {
+	text-decoration: none;
+	color: #555;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: underline;
 }
 
 ol, ul {
@@ -52,12 +69,17 @@ ol, ul {
 
 .left {
 	float: left;
+	padding: 20px;
+	border: 1px solid #0055cc;
+	border-radius: 5px;
+	height: 350px;
 }
 
 .nav {
 	padding: 20px;
 	text-align: center;
-	background-color: #0055cc;
+	border: 1px solid #0055cc;
+	border-radius: 5px;
 }
 
 .nav li {
@@ -66,7 +88,7 @@ ol, ul {
 }
 
 .nav li a{
-	color: #fff;
+	font-size: 20px;
 }
 
 .social-media {
