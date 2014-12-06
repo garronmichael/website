@@ -1,6 +1,6 @@
 /* Resets all default browser styles */
 html, body, header, h1, h2,
-h3, p, ol, ul, li, a {
+h3, p, ol, ul, li, figure, a {
 	padding: 0;
 	border: 0;
 	margin: 0;
@@ -75,19 +75,20 @@ nav a {
 
 /* .content contains .left and .right */
 main {
-	padding: 20px 20px 20px 20px;
+	padding: 20px;
 	margin: 30px 0 0 0;
 }
 
 /* Profile photo */
 .right {
 	float: right;
+	width: 30%;
 }
 
 /* About Me section */
 .left {
 	float: left;
-padding: 0 20px 0 20px;
+	padding: 0 20px;
 	height: 350px;
 	width: 60%;
 }
