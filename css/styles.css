@@ -1,5 +1,5 @@
 /* Resets all default browser styles */
-html, body, h1, h2,
+html, body, header, h1, h2,
 h3, p, ol, ul, li, a {
 	padding: 0;
 	border: 0;
@@ -56,10 +56,6 @@ a {
 a:hover {
 	color: #000;
 	text-decoration: underline;
-}
-
-.header {
-	padding: 10px 10px 10px 10px;
 }
 
 /* Navigation bar */
