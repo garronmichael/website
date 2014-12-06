@@ -59,17 +59,17 @@ a:hover {
 }
 
 /* Navigation bar */
-.nav {
+nav {
 	padding: 20px;
 	text-align: right;
 }
 
-.nav li {
+nav li {
 	display: inline;
 	padding-right: 55px;
 }
 
-.nav a {
+nav a {
 	font-size: 20px;
 }
 
