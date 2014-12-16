@@ -19,7 +19,7 @@ body {
 
 /* Sets style for Garron Sanchez */
 h1 {
-	margin: 0 0 15px 0;
+	margin: 0 0 3% 0;
 	font-size: 62px;
 	font-weight: 600;
 	text-align: center;
@@ -42,7 +42,7 @@ ol, ul {
 p {
 	font-weight: 200;
 	font-size: 16px;
-	margin: 5px 0 5px 0;
+	margin: 1% 0;
 }
 
 a {
@@ -59,13 +59,13 @@ a:hover {
 
 /* Navigation bar */
 nav {
-	padding: 20px;
+	padding: 0.625%;
 	text-align: right;
 }
 
 nav li {
 	display: inline;
-	padding-right: 55px;
+	padding-right: 4%;
 }
 
 nav a {
@@ -74,13 +74,16 @@ nav a {
 
 /* .content contains .left and .right */
 main {
-	padding: 20px;
-	margin: 30px 0 0 0;
+	height: 80%;
+	width: 80%;
+	padding: 2.5%;
+	margin: 2.5% auto 0 auto;
 }
 
 /* Profile photo */
 .right {
 	float: right;
+	height: 80%;
 	width: 30%;
 }
 
@@ -91,19 +94,19 @@ figure {
 figure img {
 	border: 1.5px  solid   #555;
 	border-radius: 50%;
-	margin-bottom: 10px;
+	margin-bottom: 3%;
 }
 /* About Me section */
 .left {
 	float: left;
-	padding: 0 20px;
-	height: 350px;
+	padding: 0 5%;
+	height: 80%;
 	width: 60%;
 }
 
 /* Descriptive paragraph */
 .bio {
-	margin: 0 auto 30px auto;
+	margin: 0 auto 4% auto;
 	width: 85%;
 	line-height: 22px;
 }
@@ -117,9 +120,9 @@ figure img {
 	background: #0055cc;
 	color: #ddd;
 	display: inline;
-	padding: 8px;
+	padding: 1%;
 	border-radius: 5px 10px 5px 12px;
-	margin-left: 10px;
+	margin-left: 1%;
 }
 
 .skills li:first-child {
@@ -133,7 +136,7 @@ figure img {
 
 .social-media li {
 	display: inline;
-	margin-left: 20px;
+	margin-left: 5%;
 }
 
 .social-media li:first-child {
