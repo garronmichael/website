@@ -1,3 +1,7 @@
+// Sass variables
+
+$font-base: 200 "Helvetica Neue", Helvetica, sans-serif;
+
 /* Resets all default browser styles */
 html, body, header, h1, h2,
 h3, p, ol, ul, li, figure, a {
@@ -12,8 +16,7 @@ h3, p, ol, ul, li, figure, a {
 body {
 	padding: 0 0 0 0;
 	background-color: #ddeeff;
-	font-family: "Helvetica Neue", Helvetica, sans-serif;
-	font-weight: 200;
+	font: $font-base;
 	color: #555;
 }
 
