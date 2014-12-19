@@ -72,19 +72,22 @@ nav a {
 	font-size: 20px;
 }
 
-/* .content contains .left and .right */
+/* main contains .left and .right */
 main {
-	height: 80%;
-	width: 80%;
+	height: 100%;
+	width: 90%;
 	padding: 2.5%;
 	margin: 2.5% auto 0 auto;
+/* Why do I need overflow: hidden to expand main to contain .left and .right? */
+	overflow: hidden;
 }
 
 /* Profile photo */
 .right {
 	float: right;
 	height: 80%;
-	width: 30%;
+	width: 35%;
+	overflow: hidden;
 }
 
 figure {
@@ -99,15 +102,15 @@ figure img {
 /* About Me section */
 .left {
 	float: left;
-	padding: 0 5%;
-	height: 80%;
+	height: 100%;
 	width: 60%;
+	overflow: visible;
 }
 
 /* Descriptive paragraph */
 .bio {
 	margin: 0 auto 4% auto;
-	width: 85%;
+	width: 90%;
 	line-height: 22px;
 }
 
