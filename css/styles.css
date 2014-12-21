@@ -82,31 +82,35 @@ main {
 	margin: 2.5% auto 0 auto;
 /* Why do I need overflow: hidden to expand main to contain .left and .right? */
 	overflow: hidden;
+	border: 1px solid #000;
 }
 
 /* Profile photo */
 .connect {
 	float: right;
 	height: 80%;
-	width: 50%;
+	width: 45%;
 	overflow: hidden;
 }
 
 figure {
-	background: url(../images/salt_flats.jpg) no-repeat;
 	border: 1.5px  solid   #555;
 	border-radius: 50%;
-	height: 400px;
-	width: 400px;
 	margin: 0 auto 3% auto;
 	overflow: hidden;
+	text-align: center;
+}
+
+figure img {
+	max-width: 100%;
 }
 /* About Me section */
 .text {
 	float: left;
 	height: 100%;
-	width: 50%;
+	width: 45%;
 	overflow: visible;
+	margin: 5% 0 0 0;
 }
 
 /* Descriptive paragraph */
@@ -167,13 +171,14 @@ Media Queries
 		border: 1px solid #000;
 	}
 	figure {
-		background: url(../images/salt_flats_small.jpg) no-repeat;
 		border: 1.5px  solid   #555;
 		border-radius: 50%;
-		height: 200px;
-		width: 200px;
 		margin: 0 auto 3% auto;
 		overflow: hidden;
+		text-align: center;
+	}
+	figure img {
+		max-width: 100%;
 	}
 	.text {
 		float: none;
