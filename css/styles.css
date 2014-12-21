@@ -154,7 +154,7 @@ Media Queries
 
 ---------------------*/
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 900px) {
 	main {
 		border: 1px solid #000;
 	}
