@@ -93,13 +93,13 @@ main {
 }
 
 figure {
-	text-align: center;
-}
-
-figure img {
+	background: url(../images/salt_flats.jpg) no-repeat;
 	border: 1.5px  solid   #555;
 	border-radius: 50%;
-	margin-bottom: 3%;
+	height: 400px;
+	width: 400px;
+	margin: 0 auto 3% auto;
+	overflow: hidden;
 }
 /* About Me section */
 .left {
