@@ -74,7 +74,7 @@ nav a {
 	font-size: 1.25em;
 }
 
-/* main contains .left and .right */
+/* main contains .connect and .text */
 main {
 	height: 100%;
 	width: 90%;
@@ -85,7 +85,7 @@ main {
 }
 
 /* Profile photo */
-.right {
+.bio {
 	float: right;
 	height: 80%;
 	width: 35%;
@@ -102,7 +102,7 @@ figure {
 	overflow: hidden;
 }
 /* About Me section */
-.left {
+.text {
 	float: left;
 	height: 100%;
 	width: 60%;
@@ -158,7 +158,7 @@ Media Queries
 	main {
 		border: 1px solid #000;
 	}
-	.right {
+	.connect {
 		float: none;
 		display: block;
 		height: 100%;
@@ -175,7 +175,7 @@ Media Queries
 		margin: 0 auto 3% auto;
 		overflow: hidden;
 	}
-	.left {
+	.text {
 		float: none;
 		display: block;
 		height: 100%;
