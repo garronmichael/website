@@ -147,3 +147,41 @@ figure {
 .social-media li:first-child {
 	margin-left: 0;
 }
+
+/*-------------------- 
+
+Media Queries
+
+---------------------*/
+
+@media screen and (max-width: 736px) {
+	main {
+		border: 1px solid #000;
+	}
+	.right {
+		float: none;
+		display: block;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		border: 1px solid #000;
+	}
+	figure {
+		background: url(../images/salt_flats_small.jpg) no-repeat;
+		border: 1.5px  solid   #555;
+		border-radius: 50%;
+		height: 200px;
+		width: 200px;
+		margin: 0 auto 3% auto;
+		overflow: hidden;
+	}
+	.left {
+		float: none;
+		display: block;
+		height: 100%;
+		width: 100%;
+		overflow: visible;
+		border: 1px solid #000;
+	}
+
+}
