@@ -5,6 +5,12 @@ body {
 	background-color: #6B8EA6;
 }
 
+h1 {
+	font-size: 5em;
+	font-weight: 400;
+	text-decoration: underline;
+}
+
 .head-spacer{
 	height: 10%;
 }
@@ -43,7 +49,7 @@ a:hover {
 }
 
 .bio {
-	font-size: 1.25em;
+	font-size: 2em;
 }
 
 .skills li {
@@ -66,7 +72,7 @@ a:hover {
 }
 
 .border {
-	border: 3px solid blue;
+	/*border: 3px solid blue;*/
 }
 
 .col-md-8, .col-xs-6, .col-md-6, .col-md-4 {
@@ -75,7 +81,9 @@ a:hover {
 
 .project {
 	width: 100%;
-	margin: 2% 0 2% 0;
+	margin: 2% auto 2% auto;
+	/*border: 1px solid red;*/
+	text-align: center;
 }
 
 .project-text {
@@ -83,7 +91,7 @@ a:hover {
 	color: #ddd;
 	padding: 1%;
 	border-radius: 5px 10px 5px 12px;
-	margin: 5% auto 0 auto;
+	margin: 5% 5% 0 7%;
 }
 
 .project div{
@@ -91,6 +99,7 @@ a:hover {
 
 .project-image {
 	border-radius: 8%;
+  text-align: center;
 }
 
 .portfolio {
@@ -141,4 +150,11 @@ li {
 
 .brief {
 	margin: 1% 0 2% 0;
+	font-size: 1.4em;
+	font-weight: 500;
+}
+
+.description {
+	font-size: 1.4em;
+	font-weight: 200;
 }

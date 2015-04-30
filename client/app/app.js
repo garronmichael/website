@@ -23,7 +23,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
                           client-to-client data-streaming software called WebRTC. It\'s so new Firefox and Chrome \
                           browsers support it. Essentially, we wanted to make a way to streamline technical interviews because \
                           today most remote interviews are a messy mix of Skype + Google Drive + Notes + CodeShare. We really \
-                          tackled the issues head-on and learned so much from working with profession technical interviewers. \
+                          tackled the issues head-on and learned so much from working with profession technical interviewers. \n\n \
                           On this project, I wanted more back end experience so I built the Node server and designed the \
                           authentication with GitHub. However, by the midpoint of the project I was building out my own Angular \
                           controllers, redesigning views and even making new database queries. I loved being able to work on the full \
