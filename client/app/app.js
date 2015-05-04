@@ -13,6 +13,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
       url: 'portfolio',
       templateUrl: 'app/portfolio.html',
       controller: function($scope) {
+        $scope.portOpen = false;
         $scope.portfolio = [
           {
             name: 'HackBox',
@@ -20,7 +21,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             brief: 'A remote interview platform for software engineers designed with AngularJS, Node, mongoDB, \
                     Express, Node and GitHub OAuth.',
             description: 'This project was very cool. We leveraged a new \
-                          client-to-client data-streaming software called WebRTC. It\'s so new Firefox and Chrome \
+                          client-to-client data-streaming software called WebRTC. It\'s so new only Firefox and Chrome \
                           browsers support it. Essentially, we wanted to make a way to streamline technical interviews because \
                           today most remote interviews are a messy mix of Skype + Google Drive + Notes + CodeShare. We really \
                           tackled the issues head-on and learned so much from working with profession technical interviewers. \n\n \
