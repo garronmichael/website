@@ -39,9 +39,9 @@
 	<section class="portfolio center">
 	  <div class="col-md-4"></div>
 	  <div class="col-md-8">
-	    <a class="btn btn-default display-portfolio" ui-sref="about.portfolio" ng-click="portOpen = true">Display Portfolio</a>
-	    <p ng-show="portOpen">Scroll down to see the projects</p>
-	    <p ng-show="portOpen">Click on a project title to see a more detailed description</p>
+	    <a class="btn btn-default display-portfolio" ui-sref="about.portfolio" ng-click="portOpen = true" ng-hide="portOpen">Display Portfolio</a>
+	    <p class="userDirections" ng-show="portOpen">Scroll down to see the projects.</p>
+	    <p class="userDirections" ng-show="portOpen">Click on a project title to see a more detailed description.</p>
 	  </div>
 	</section>
 		<div ui-view></div>
