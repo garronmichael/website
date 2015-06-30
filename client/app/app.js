@@ -41,7 +41,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
                           project and we really made the app our own. We basically gutted the entire front end, integrated \
                           GitHub profiles more prominently and cut some features we thought weren\'t high value. Overall \
                           this project was a great experience and I\'m very happy to have had it.',
-            link: 'http://www.snackplant.azurewebsites.net '
+            link: 'http://snackplant.azurewebsites.net '
           },
           {
             name: 'Wayfare',
@@ -53,7 +53,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
                           an incredible destinaton? Me. For this project I was primarily charged with backend tasks. \
                           I migrated my team to a MySQL database and I deployed the project to Azure. Discovering \
                           the quirks of Google\'s QPX Flight API was really fun and interesting.',
-            link: 'http://www.neglectedeggplant.azurewebsites.net'
+            link: 'http://neglectedeggplant.azurewebsites.net'
           },
           {
             name: 'VaxTrak',
