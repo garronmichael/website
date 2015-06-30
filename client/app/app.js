@@ -28,7 +28,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
                           On this project, I wanted more back end experience so I built the Node server and designed the \
                           authentication with GitHub. However, by the midpoint of the project I was building out my own Angular \
                           controllers, redesigning views and even making new database queries. I loved being able to work on the full \
-                          stack of this project.'
+                          stack of this project.',
+            link: 'http://www.hackbox.me'
           },
           {
             name: 'SnackPlant',
@@ -39,7 +40,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
                           from another team. Working with legacy code is always a challenge, but I had an amazing team on this \
                           project and we really made the app our own. We basically gutted the entire front end, integrated \
                           GitHub profiles more prominently and cut some features we thought weren\'t high value. Overall \
-                          this project was a great experience and I\'m very happy to have had it.'
+                          this project was a great experience and I\'m very happy to have had it.',
+            link: 'http://www.snackplant.azurewebsites.net '
           },
           {
             name: 'Wayfare',
@@ -50,7 +52,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
                           project because I felt like I was building the app for myself. Who wants a cheap flight to \
                           an incredible destinaton? Me. For this project I was primarily charged with backend tasks. \
                           I migrated my team to a MySQL database and I deployed the project to Azure. Discovering \
-                          the quirks of Google\'s QPX Flight API was really fun and interesting.'
+                          the quirks of Google\'s QPX Flight API was really fun and interesting.',
+            link: 'http://www.neglectedeggplant.azurewebsites.net'
           },
           {
             name: 'VaxTrak',
