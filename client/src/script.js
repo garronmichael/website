@@ -19,29 +19,67 @@ function Content() {
           color: '#fff',
           display: 'flex',
           flexDirection: 'column',
-          fontFamily: 'Helvetica Nueue, sans-serif',
-          fontWeight: 100,
-          justifyContent: 'space-around',
+          height: '100%',
+          justifyContent: 'center',
           textAlign: 'center',
           width: '50%',
         }}
       >
-        <div>
-          <span
+        <div
+          style={{
+            marginBottom: 30,
+          }}
+        >
+          <div
             style={{
-              fontWeight: 600,
-              marginRight: 5,
+              fontFamily: 'Lobster, sans-serif',
+              fontSize: 80,
+              marginBottom: 20,
             }}
           >
             Hello, I'm Garron.
-          </span>
-          Software engineer in West Hollywood, CA.
+          </div>
+          <div
+            style={{
+              fontFamily: 'Helvetica Nueue, sans-serif',
+              fontSize: 16,
+              fontWeight: 300,
+            }}
+          >
+            Software engineer and lifelong learner in West Hollywood, CA.
+          </div>
         </div>
-        <div>
+        <div
+          style={{
+            alignItems: 'center',
+            display: 'flex',
+            justifyContent: 'space-around',
+            width: '80%',
+          }}
+        >
           <img
-            alt="Garron's signature"
-            height="300px"
-            src="./../assets/images/g.png"
+            alt="react logo"
+            height="50px"
+            width="50px"
+            src="./../assets/images/react.png"
+          />
+          <img
+            alt="node logo"
+            height="50px"
+            width="50px"
+            src="./../assets/images/node.png"
+          />
+          <img
+            alt="j s dot l a logo"
+            height="50px"
+            width="50px"
+            src="./../assets/images/jsla.png"
+          />
+          <img
+            alt="rainbow"
+            height="50px"
+            width="50px"
+            src="./../assets/images/rainbow.png"
           />
         </div>
       </div>
