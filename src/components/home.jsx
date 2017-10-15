@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Radium, { StyleRoot } from 'radium';
+import React from 'react'
+import Radium from 'radium'
 
+@Radium
 class Content extends React.Component {
   render() {
     return (
@@ -85,24 +85,10 @@ class Content extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-Content = Radium(Content);
+// Content = Radium(Content);
 
-class App extends React.Component {
-  render() {
-    return (
-      <StyleRoot>
-        <Content />
-      </StyleRoot>
-    );
-  }
-}
-
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('content')
-);
+export default Content
