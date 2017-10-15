@@ -1,13 +1,19 @@
 import React from 'react'
 import Radium from 'radium'
 
+import PalmTreeImage from '../assets/images/palm_tree.jpg'
+import RainbowImage from '../assets/images/rainbow.png'
+import NodeImage from '../assets/images/node.png'
+import ReactImage from '../assets/images/react.png'
+import JSLAImage from '../assets/images/jsla.png'
+
 @Radium
 class Content extends React.Component {
   render() {
     return (
       <div
         style={{
-          backgroundImage: 'url(./../assets/images/palm_tree.jpg)',
+          backgroundImage: `url(${PalmTreeImage})`,
           backgroundOrigin: 'border-box',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -62,25 +68,25 @@ class Content extends React.Component {
               alt="react logo"
               height="50px"
               width="50px"
-              src="./../assets/images/react.png"
+              src={ReactImage}
             />
             <img
               alt="node logo"
               height="50px"
               width="50px"
-              src="./../assets/images/node.png"
+              src={NodeImage}
             />
             <img
               alt="j s dot l a logo"
               height="50px"
               width="50px"
-              src="./../assets/images/jsla.png"
+              src={JSLAImage}
             />
             <img
               alt="rainbow"
               height="50px"
               width="50px"
-              src="./../assets/images/rainbow.png"
+              src={RainbowImage}
             />
           </div>
         </div>

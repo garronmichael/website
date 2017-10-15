@@ -18,7 +18,13 @@ module.exports = {
             plugins: ['transform-decorators-legacy', 'transform-es2015-modules-amd']
           }
         }
-      }
+      },
+      {
+       test: /\.(png|svg|jpg|gif)$/,
+       use: [
+         'file-loader'
+       ]
+     }
     ]
   },
   devServer: {

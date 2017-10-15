@@ -1,8 +1,9 @@
 import ReactDOM from 'react-dom'
+import React from 'react'
 
-import Root from './components/root.jsx'
+import Home from './components/home.jsx'
 
 ReactDOM.render(
-  <Root />,
+  <Home />,
   document.getElementById('content')
 );
