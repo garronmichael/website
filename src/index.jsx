@@ -6,4 +6,4 @@ import Home from './components/home.jsx'
 ReactDOM.render(
   <Home />,
   document.getElementById('content')
-);
+)
