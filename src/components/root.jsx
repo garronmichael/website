@@ -11,7 +11,7 @@ class Root extends React.Component {
       <StyleRoot>
         <Home />
       </StyleRoot>
-    );
+    )
   }
 }
 

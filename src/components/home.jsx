@@ -89,6 +89,4 @@ class Content extends React.Component {
   }
 }
 
-// Content = Radium(Content);
-
 export default Content
