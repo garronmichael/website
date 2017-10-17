@@ -3834,7 +3834,7 @@ module.exports = exports['default'];
 /* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(61), __webpack_require__(1), __webpack_require__(79), __webpack_require__(110), __webpack_require__(109), __webpack_require__(162)], __WEBPACK_AMD_DEFINE_RESULT__ = function (_reactDom, _react, _reactRouterDom, _radium, _home, _hire) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(61), __webpack_require__(1), __webpack_require__(79), __webpack_require__(110), __webpack_require__(109), __webpack_require__(162), __webpack_require__(157)], __WEBPACK_AMD_DEFINE_RESULT__ = function (_reactDom, _react, _reactRouterDom, _radium, _home, _hire, _palm_tree) {
   'use strict';
 
   var _reactDom2 = _interopRequireDefault(_reactDom);
@@ -3844,6 +3844,8 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
   var _home2 = _interopRequireDefault(_home);
 
   var _hire2 = _interopRequireDefault(_hire);
+
+  var _palm_tree2 = _interopRequireDefault(_palm_tree);
 
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
@@ -3858,11 +3860,23 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
       _reactRouterDom.BrowserRouter,
       null,
       _react2.default.createElement(
-        _reactRouterDom.Switch,
-        null,
-        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
-        _react2.default.createElement(_reactRouterDom.Route, { path: '/hire', component: _hire2.default }),
-        _react2.default.createElement(_reactRouterDom.Route, { component: null })
+        'div',
+        {
+          style: {
+            backgroundImage: 'url(' + _palm_tree2.default + ')',
+            backgroundOrigin: 'border-box',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
+          }
+        },
+        _react2.default.createElement(
+          _reactRouterDom.Switch,
+          null,
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/hire', component: _hire2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { component: null })
+        )
       )
     )
   ), document.getElementById('content'));
@@ -27903,7 +27917,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 /* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(110), __webpack_require__(79), __webpack_require__(157), __webpack_require__(158), __webpack_require__(159), __webpack_require__(160), __webpack_require__(161)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _react, _radium, _reactRouterDom, _palm_tree, _rainbow, _node, _react3, _jsla) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(110), __webpack_require__(79), __webpack_require__(158), __webpack_require__(159), __webpack_require__(160), __webpack_require__(161)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _react, _radium, _reactRouterDom, _rainbow, _node, _react3, _jsla) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -27913,8 +27927,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
   var _react2 = _interopRequireDefault(_react);
 
   var _radium2 = _interopRequireDefault(_radium);
-
-  var _palm_tree2 = _interopRequireDefault(_palm_tree);
 
   var _rainbow2 = _interopRequireDefault(_rainbow);
 
@@ -27998,117 +28010,105 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
           'div',
           {
             style: {
-              backgroundImage: 'url(' + _palm_tree2.default + ')',
-              backgroundOrigin: 'border-box',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover'
+              alignItems: 'center',
+              color: '#b4c5da',
+              display: 'flex',
+              flexDirection: 'column',
+              height: '100%',
+              textAlign: 'center',
+              justifyContent: 'space-around',
+              width: '100%'
             }
           },
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+              'div',
+              {
+                style: {
+                  fontFamily: 'Lobster, sans-serif',
+                  fontSize: '3em',
+                  marginBottom: 30,
+                  '@media (min-width: 769px)': {
+                    fontSize: '5em'
+                  }
+                }
+              },
+              'Hello, I\'m Garron.'
+            ),
+            _react2.default.createElement(
+              'div',
+              {
+                style: {
+                  fontFamily: 'Lobster, sans-serif',
+                  fontSize: '2em',
+                  '@media (min-width: 769px)': {
+                    fontSize: '3em'
+                  }
+                }
+              },
+              'Software Engineer'
+            )
+          ),
           _react2.default.createElement(
             'div',
             {
               style: {
                 alignItems: 'center',
-                color: '#b4c5da',
                 display: 'flex',
-                flexDirection: 'column',
-                height: '100%',
-                textAlign: 'center',
                 justifyContent: 'space-around',
-                width: '100%'
+                width: '80%'
               }
             },
-            _react2.default.createElement(
-              'div',
-              null,
-              _react2.default.createElement(
-                'div',
-                {
-                  style: {
-                    fontFamily: 'Lobster, sans-serif',
-                    fontSize: '3em',
-                    marginBottom: 30,
-                    '@media (min-width: 769px)': {
-                      fontSize: '5em'
-                    }
-                  }
-                },
-                'Hello, I\'m Garron.'
-              ),
-              _react2.default.createElement(
-                'div',
-                {
-                  style: {
-                    fontFamily: 'Lobster, sans-serif',
-                    fontSize: '2em',
-                    '@media (min-width: 769px)': {
-                      fontSize: '3em'
-                    }
-                  }
-                },
-                'Software Engineer'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              {
-                style: {
-                  alignItems: 'center',
-                  display: 'flex',
-                  justifyContent: 'space-around',
-                  width: '80%'
-                }
+            _react2.default.createElement('img', {
+              alt: 'react logo',
+              height: '50px',
+              width: '50px',
+              src: _react4.default
+            }),
+            _react2.default.createElement('img', {
+              alt: 'node logo',
+              height: '50px',
+              width: '50px',
+              src: _node2.default
+            }),
+            _react2.default.createElement('img', {
+              alt: 'j s dot l a logo',
+              height: '50px',
+              width: '50px',
+              src: _jsla2.default
+            }),
+            _react2.default.createElement('img', {
+              alt: 'rainbow',
+              height: '50px',
+              width: '50px',
+              src: _rainbow2.default
+            })
+          ),
+          _react2.default.createElement(
+            'button',
+            {
+              onClick: function onClick() {
+                return _this2.props.history.push('/hire');
               },
-              _react2.default.createElement('img', {
-                alt: 'react logo',
-                height: '50px',
-                width: '50px',
-                src: _react4.default
-              }),
-              _react2.default.createElement('img', {
-                alt: 'node logo',
-                height: '50px',
-                width: '50px',
-                src: _node2.default
-              }),
-              _react2.default.createElement('img', {
-                alt: 'j s dot l a logo',
-                height: '50px',
-                width: '50px',
-                src: _jsla2.default
-              }),
-              _react2.default.createElement('img', {
-                alt: 'rainbow',
-                height: '50px',
-                width: '50px',
-                src: _rainbow2.default
-              })
-            ),
-            _react2.default.createElement(
-              'button',
-              {
-                onClick: function onClick() {
-                  return _this2.props.history.push('/hire');
-                },
-                style: {
-                  border: '3px solid #cbb2bb',
-                  borderRadius: 10,
-                  backgroundColor: 'transparent',
-                  color: '#cbb2bb',
-                  fontFamily: 'Lobster, sans-serif',
-                  width: '65%',
-                  transition: 'all 0.5s',
-                  cursor: 'pointer',
-                  fontSize: '3em',
-                  ':hover': {
-                    backgroundColor: '#cbb2bb',
-                    color: '#fff'
-                  }
+              style: {
+                border: '3px solid #cbb2bb',
+                borderRadius: 10,
+                backgroundColor: 'transparent',
+                color: '#cbb2bb',
+                fontFamily: 'Lobster, sans-serif',
+                width: '65%',
+                transition: 'all 0.5s',
+                cursor: 'pointer',
+                fontSize: '3em',
+                ':hover': {
+                  backgroundColor: '#cbb2bb',
+                  color: '#fff'
                 }
-              },
-              'Hire'
-            )
+              }
+            },
+            'Hire'
           )
         );
       }
@@ -31330,7 +31330,7 @@ module.exports = __webpack_require__.p + "1246f230e362eec2fac99d53ae9432af.png";
 /* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(110), __webpack_require__(157)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _react, _radium, _palm_tree) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(110)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _react, _radium) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -31340,8 +31340,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
   var _react2 = _interopRequireDefault(_react);
 
   var _radium2 = _interopRequireDefault(_radium);
-
-  var _palm_tree2 = _interopRequireDefault(_palm_tree);
 
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
@@ -31417,110 +31415,98 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
           'div',
           {
             style: {
-              backgroundImage: 'url(' + _palm_tree2.default + ')',
-              backgroundOrigin: 'border-box',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover'
+              alignItems: 'center',
+              color: '#b4c5da',
+              display: 'flex',
+              flexDirection: 'column',
+              height: '100%',
+              textAlign: 'center',
+              justifyContent: 'space-around',
+              width: '100%'
             }
           },
           _react2.default.createElement(
             'div',
-            {
-              style: {
-                alignItems: 'center',
-                color: '#b4c5da',
-                display: 'flex',
-                flexDirection: 'column',
-                height: '100%',
-                textAlign: 'center',
-                justifyContent: 'space-around',
-                width: '100%'
-              }
-            },
+            null,
             _react2.default.createElement(
               'div',
-              null,
-              _react2.default.createElement(
-                'div',
-                {
-                  style: {
-                    fontFamily: 'Lobster, sans-serif',
-                    fontSize: '3em',
-                    marginBottom: 30,
-                    '@media (min-width: 769px)': {
-                      fontSize: '5em'
-                    }
-                  }
-                },
-                'Accepting Projects'
-              ),
-              _react2.default.createElement(
-                'div',
-                {
-                  style: {
-                    fontFamily: 'Lobster, sans-serif',
-                    fontSize: '2em',
-                    '@media (min-width: 769px)': {
-                      fontSize: '3em'
-                    }
-                  }
-                },
-                _react2.default.createElement(
-                  'a',
-                  {
-                    key: 'email-button',
-                    href: 'mailto:garron.michael@gmail.com',
-                    style: {
-                      color: '#b4c5da',
-                      border: '3px solid #b4c5da',
-                      borderRadius: 10,
-                      textDecoration: 'none',
-                      paddingLeft: 10,
-                      paddingRight: 10,
-                      marginRight: 5,
-                      transition: 'all 0.5s',
-                      cursor: 'pointer',
-                      ':hover': {
-                        backgroundColor: '#b4c5da',
-                        color: '#fff'
-                      }
-                    }
-                  },
-                  'Email me'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  ' for a free consultation.'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'button',
               {
-                key: 'home-button',
-                onClick: function onClick() {
-                  return _this2.props.history.push('/');
-                },
                 style: {
-                  border: '3px solid #cbb2bb',
-                  borderRadius: 10,
-                  backgroundColor: 'transparent',
-                  color: '#cbb2bb',
                   fontFamily: 'Lobster, sans-serif',
-                  width: '65%',
-                  transition: 'all 0.5s',
-                  cursor: 'pointer',
                   fontSize: '3em',
-                  ':hover': {
-                    backgroundColor: '#cbb2bb',
-                    color: '#fff'
+                  marginBottom: 30,
+                  '@media (min-width: 769px)': {
+                    fontSize: '5em'
                   }
                 }
               },
-              'Home'
+              'Accepting Projects'
+            ),
+            _react2.default.createElement(
+              'div',
+              {
+                style: {
+                  fontFamily: 'Lobster, sans-serif',
+                  fontSize: '2em',
+                  '@media (min-width: 769px)': {
+                    fontSize: '3em'
+                  }
+                }
+              },
+              _react2.default.createElement(
+                'a',
+                {
+                  key: 'email-button',
+                  href: 'mailto:garron.michael@gmail.com',
+                  style: {
+                    color: '#b4c5da',
+                    border: '3px solid #b4c5da',
+                    borderRadius: 10,
+                    textDecoration: 'none',
+                    paddingLeft: 10,
+                    paddingRight: 10,
+                    marginRight: 5,
+                    transition: 'all 0.5s',
+                    cursor: 'pointer',
+                    ':hover': {
+                      backgroundColor: '#b4c5da',
+                      color: '#fff'
+                    }
+                  }
+                },
+                'Email me'
+              ),
+              _react2.default.createElement(
+                'span',
+                null,
+                ' for a free consultation.'
+              )
             )
+          ),
+          _react2.default.createElement(
+            'button',
+            {
+              key: 'home-button',
+              onClick: function onClick() {
+                return _this2.props.history.push('/');
+              },
+              style: {
+                border: '3px solid #cbb2bb',
+                borderRadius: 10,
+                backgroundColor: 'transparent',
+                color: '#cbb2bb',
+                fontFamily: 'Lobster, sans-serif',
+                width: '65%',
+                transition: 'all 0.5s',
+                cursor: 'pointer',
+                fontSize: '3em',
+                ':hover': {
+                  backgroundColor: '#cbb2bb',
+                  color: '#fff'
+                }
+              }
+            },
+            'Home'
           )
         );
       }
