@@ -3834,7 +3834,7 @@ module.exports = exports['default'];
 /* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(61), __webpack_require__(1), __webpack_require__(79), __webpack_require__(109)], __WEBPACK_AMD_DEFINE_RESULT__ = function (_reactDom, _react, _reactRouterDom, _home) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(61), __webpack_require__(1), __webpack_require__(79), __webpack_require__(110), __webpack_require__(109), __webpack_require__(162)], __WEBPACK_AMD_DEFINE_RESULT__ = function (_reactDom, _react, _reactRouterDom, _radium, _home, _hire) {
   'use strict';
 
   var _reactDom2 = _interopRequireDefault(_reactDom);
@@ -3843,6 +3843,8 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
   var _home2 = _interopRequireDefault(_home);
 
+  var _hire2 = _interopRequireDefault(_hire);
+
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
       default: obj
@@ -3850,13 +3852,18 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
   }
 
   _reactDom2.default.render(_react2.default.createElement(
-    _reactRouterDom.BrowserRouter,
+    _radium.StyleRoot,
     null,
     _react2.default.createElement(
-      _reactRouterDom.Switch,
+      _reactRouterDom.BrowserRouter,
       null,
-      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
-      _react2.default.createElement(_reactRouterDom.Route, { component: null })
+      _react2.default.createElement(
+        _reactRouterDom.Switch,
+        null,
+        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/hire', component: _hire2.default }),
+        _react2.default.createElement(_reactRouterDom.Route, { component: null })
+      )
     )
   ), document.getElementById('content'));
 }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
@@ -27896,7 +27903,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 /* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(110), __webpack_require__(157), __webpack_require__(158), __webpack_require__(159), __webpack_require__(160), __webpack_require__(161)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _react, _radium, _palm_tree, _rainbow, _node, _react3, _jsla) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(110), __webpack_require__(79), __webpack_require__(157), __webpack_require__(158), __webpack_require__(159), __webpack_require__(160), __webpack_require__(161)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _react, _radium, _reactRouterDom, _palm_tree, _rainbow, _node, _react3, _jsla) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -27973,7 +27980,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
   var _class;
 
-  var Home = (0, _radium2.default)(_class = function (_React$Component) {
+  var Home = (0, _reactRouterDom.withRouter)(_class = (0, _radium2.default)(_class = function (_React$Component) {
     _inherits(Home, _React$Component);
 
     function Home() {
@@ -27985,6 +27992,8 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
     _createClass(Home, [{
       key: 'render',
       value: function render() {
+        var _this2 = this;
+
         return _react2.default.createElement(
           'div',
           {
@@ -28001,29 +28010,28 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             {
               style: {
                 alignItems: 'center',
-                color: '#fff',
+                color: '#b4c5da',
                 display: 'flex',
                 flexDirection: 'column',
                 height: '100%',
-                justifyContent: 'center',
                 textAlign: 'center',
+                justifyContent: 'space-around',
                 width: '100%'
               }
             },
             _react2.default.createElement(
               'div',
-              {
-                style: {
-                  marginBottom: 30
-                }
-              },
+              null,
               _react2.default.createElement(
                 'div',
                 {
                   style: {
                     fontFamily: 'Lobster, sans-serif',
-                    fontSize: 80,
-                    marginBottom: 20
+                    fontSize: '3em',
+                    marginBottom: 30,
+                    '@media (min-width: 769px)': {
+                      fontSize: '5em'
+                    }
                   }
                 },
                 'Hello, I\'m Garron.'
@@ -28032,12 +28040,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 'div',
                 {
                   style: {
-                    fontFamily: 'Helvetica Nueue, sans-serif',
-                    fontSize: 16,
-                    fontWeight: 300
+                    fontFamily: 'Lobster, sans-serif',
+                    fontSize: '2em',
+                    '@media (min-width: 769px)': {
+                      fontSize: '3em'
+                    }
                   }
                 },
-                'Software engineer and lifelong learner in West Hollywood, CA.'
+                'Software Engineer'
               )
             ),
             _react2.default.createElement(
@@ -28074,6 +28084,30 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 width: '50px',
                 src: _rainbow2.default
               })
+            ),
+            _react2.default.createElement(
+              'button',
+              {
+                onClick: function onClick() {
+                  return _this2.props.history.push('/hire');
+                },
+                style: {
+                  border: '3px solid #cbb2bb',
+                  borderRadius: 10,
+                  backgroundColor: 'transparent',
+                  color: '#cbb2bb',
+                  fontFamily: 'Lobster, sans-serif',
+                  width: '65%',
+                  transition: 'all 0.5s',
+                  cursor: 'pointer',
+                  fontSize: '3em',
+                  ':hover': {
+                    backgroundColor: '#cbb2bb',
+                    color: '#fff'
+                  }
+                }
+              },
+              'Hire'
             )
           )
         );
@@ -28081,7 +28115,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
     }]);
 
     return Home;
-  }(_react2.default.Component)) || _class;
+  }(_react2.default.Component)) || _class) || _class;
 
   exports.default = Home;
 }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
@@ -31291,6 +31325,213 @@ module.exports = __webpack_require__.p + "692adb35708d9279ca7eb56c71bfc102.png";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "1246f230e362eec2fac99d53ae9432af.png";
+
+/***/ }),
+/* 162 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(110), __webpack_require__(157)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _react, _radium, _palm_tree) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _radium2 = _interopRequireDefault(_radium);
+
+  var _palm_tree2 = _interopRequireDefault(_palm_tree);
+
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  var _createClass = function () {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+
+    return function (Constructor, protoProps, staticProps) {
+      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
+
+  function _possibleConstructorReturn(self, call) {
+    if (!self) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+  }
+
+  function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    }
+
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+      constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+  }
+
+  var _class;
+
+  var Hire = (0, _radium2.default)(_class = function (_React$Component) {
+    _inherits(Hire, _React$Component);
+
+    function Hire() {
+      _classCallCheck(this, Hire);
+
+      return _possibleConstructorReturn(this, (Hire.__proto__ || Object.getPrototypeOf(Hire)).apply(this, arguments));
+    }
+
+    _createClass(Hire, [{
+      key: 'render',
+      value: function render() {
+        var _this2 = this;
+
+        return _react2.default.createElement(
+          'div',
+          {
+            style: {
+              backgroundImage: 'url(' + _palm_tree2.default + ')',
+              backgroundOrigin: 'border-box',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover'
+            }
+          },
+          _react2.default.createElement(
+            'div',
+            {
+              style: {
+                alignItems: 'center',
+                color: '#b4c5da',
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
+                textAlign: 'center',
+                justifyContent: 'space-around',
+                width: '100%'
+              }
+            },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'div',
+                {
+                  style: {
+                    fontFamily: 'Lobster, sans-serif',
+                    fontSize: '3em',
+                    marginBottom: 30,
+                    '@media (min-width: 769px)': {
+                      fontSize: '5em'
+                    }
+                  }
+                },
+                'Accepting Projects'
+              ),
+              _react2.default.createElement(
+                'div',
+                {
+                  style: {
+                    fontFamily: 'Lobster, sans-serif',
+                    fontSize: '2em',
+                    '@media (min-width: 769px)': {
+                      fontSize: '3em'
+                    }
+                  }
+                },
+                _react2.default.createElement(
+                  'a',
+                  {
+                    key: 'email-button',
+                    href: 'mailto:garron.michael@gmail.com',
+                    style: {
+                      color: '#b4c5da',
+                      border: '3px solid #b4c5da',
+                      borderRadius: 10,
+                      textDecoration: 'none',
+                      paddingLeft: 10,
+                      paddingRight: 10,
+                      marginRight: 5,
+                      transition: 'all 0.5s',
+                      cursor: 'pointer',
+                      ':hover': {
+                        backgroundColor: '#b4c5da',
+                        color: '#fff'
+                      }
+                    }
+                  },
+                  'Email me'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  ' for a free consultation.'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'button',
+              {
+                key: 'home-button',
+                onClick: function onClick() {
+                  return _this2.props.history.push('/');
+                },
+                style: {
+                  border: '3px solid #cbb2bb',
+                  borderRadius: 10,
+                  backgroundColor: 'transparent',
+                  color: '#cbb2bb',
+                  fontFamily: 'Lobster, sans-serif',
+                  width: '65%',
+                  transition: 'all 0.5s',
+                  cursor: 'pointer',
+                  fontSize: '3em',
+                  ':hover': {
+                    backgroundColor: '#cbb2bb',
+                    color: '#fff'
+                  }
+                }
+              },
+              'Home'
+            )
+          )
+        );
+      }
+    }]);
+
+    return Hire;
+  }(_react2.default.Component)) || _class;
+
+  exports.default = Hire;
+}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ })
 /******/ ]);
