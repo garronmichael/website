@@ -10,6 +10,7 @@ import JSLAImage from '../assets/images/jsla.png'
 @Radium
 class Home extends React.Component {
   render() {
+
     return (
       <div
         style={{
@@ -23,37 +24,38 @@ class Home extends React.Component {
         <div
           style={{
             alignItems: 'center',
-            color: '#fff',
+            color: '#b4c5da',
             display: 'flex',
             flexDirection: 'column',
             height: '100%',
-            justifyContent: 'center',
             textAlign: 'center',
-            width: '100%',
+            justifyContent: 'space-around',
+            width: '100%'
           }}
         >
-          <div
-            style={{
-              marginBottom: 30,
-            }}
-          >
+          <div>
             <div
               style={{
                 fontFamily: 'Lobster, sans-serif',
-                fontSize: 80,
-                marginBottom: 20,
+                fontSize: '3em',
+                marginBottom: 30,
+                '@media (min-width: 769px)': {
+                  fontSize: '5em'
+                }
               }}
             >
               Hello, I'm Garron.
             </div>
             <div
               style={{
-                fontFamily: 'Helvetica Nueue, sans-serif',
-                fontSize: 16,
-                fontWeight: 300,
+                fontFamily: 'Lobster, sans-serif',
+                fontSize: '2em',
+                '@media (min-width: 769px)': {
+                  fontSize: '3em'
+                }
               }}
             >
-              Software engineer and lifelong learner in West Hollywood, CA.
+              Software Engineer
             </div>
           </div>
           <div
@@ -61,7 +63,7 @@ class Home extends React.Component {
               alignItems: 'center',
               display: 'flex',
               justifyContent: 'space-around',
-              width: '80%',
+              width: '80%'
             }}
           >
             <img
