@@ -1,5 +1,6 @@
 import React from 'react'
 import Radium from 'radium'
+import {withRouter} from 'react-router-dom'
 
 import PalmTreeImage from '../assets/images/palm_tree.jpg'
 import RainbowImage from '../assets/images/rainbow.png'
@@ -7,6 +8,7 @@ import NodeImage from '../assets/images/node.png'
 import ReactImage from '../assets/images/react.png'
 import JSLAImage from '../assets/images/jsla.png'
 
+@withRouter
 @Radium
 class Home extends React.Component {
   render() {
@@ -91,6 +93,26 @@ class Home extends React.Component {
               src={RainbowImage}
             />
           </div>
+          <button
+            onClick={() => this.props.history.push('/hire')}
+            style={{
+              border: '3px solid #cbb2bb',
+              borderRadius: 10,
+              backgroundColor: 'transparent',
+              color: '#cbb2bb',
+              fontFamily: 'Lobster, sans-serif',
+              width: '65%',
+              transition: 'all 0.5s',
+              cursor: 'pointer',
+              fontSize: '3em',
+              ':hover': {
+                backgroundColor: '#cbb2bb',
+                color: '#fff'
+              }
+            }}
+          >
+            Hire
+          </button>
         </div>
       </div>
     )
