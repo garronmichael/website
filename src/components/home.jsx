@@ -8,7 +8,7 @@ import ReactImage from '../assets/images/react.png'
 import JSLAImage from '../assets/images/jsla.png'
 
 @Radium
-class Content extends React.Component {
+class Home extends React.Component {
   render() {
     return (
       <div
@@ -95,4 +95,4 @@ class Content extends React.Component {
   }
 }
 
-export default Content
+export default Home
