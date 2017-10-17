@@ -5,16 +5,21 @@ import {
   Route,
   Switch
 } from 'react-router-dom'
+import {StyleRoot} from 'radium'
 
 import Home from './components/home.jsx'
+import Hire from './components/hire.jsx'
 
 ReactDOM.render((
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route component={null} />
-    </Switch>
-  </BrowserRouter>
+  <StyleRoot>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/hire" component={Hire} />
+        <Route component={null} />
+      </Switch>
+    </BrowserRouter>
+  </StyleRoot>
 ),
   document.getElementById('content')
 )
