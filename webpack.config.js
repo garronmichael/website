@@ -9,7 +9,8 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist',
-    historyApiFallback: true
+    historyApiFallback: true,
+    overlay: true
   },
   module: {
     rules: [
