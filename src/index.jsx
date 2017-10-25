@@ -1,20 +1,28 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
 import {
-  BrowserRouter,
+  Router,
   Route,
   Switch
 } from 'react-router-dom'
 import {StyleRoot} from 'radium'
+import {createBrowserHistory} from 'history'
 
 import Home from './components/home.jsx'
 import Hire from './components/hire.jsx'
 
 import PalmTreeImage from './assets/images/palm_tree.jpg'
 
+const history = createBrowserHistory()
+
+history.listen((location) => {
+
+  gtag('config', 'UA-108631840-1', {'page_path': location.pathname})
+})
+
 ReactDOM.render((
   <StyleRoot>
-    <BrowserRouter>
+    <Router history={history}>
       <div
         style={{
           backgroundImage: `url(${PalmTreeImage})`,
@@ -30,7 +38,7 @@ ReactDOM.render((
           <Route component={null} />
         </Switch>
       </div>
-    </BrowserRouter>
+    </Router>
   </StyleRoot>
 ),
   document.getElementById('content')
