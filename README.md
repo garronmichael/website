@@ -2,6 +2,6 @@
 
 This repository is my personal website.
 
-It is a single-page website built with React, and runs on a Node/Express server.
+It is a Next.js project with typescript, tailwind and eslint.  
 
-Feel free to poke around. Thanks for viewing! :)
+Feel free to poke around. Thanks for viewing!
