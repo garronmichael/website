@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-sunrise-blue: #b4c5da;
+}
