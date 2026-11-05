@@ -9,7 +9,7 @@ const lobster = Lobster({
 export default function Page() {
   return (
     <div
-        className={`${lobster.className} h-full w-full flex flex-col items-center justify-around not-even:text-center text-sunrise-blue`}
+        className={`${lobster.className} h-full w-full flex flex-col items-center justify-around text-center text-sunrise-blue`}
     >
       <div>
         <div
